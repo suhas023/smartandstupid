@@ -1,6 +1,7 @@
 "use client";
 
 import { ReactNode } from "react";
+import { useState } from "react";
 
 interface ButtonProps {
   children: ReactNode;
@@ -9,6 +10,7 @@ interface ButtonProps {
 }
 
 export const Button = ({ children, className, appName }: ButtonProps) => {
+  console.log(useState(0));
   return (
     <button
       className={className}

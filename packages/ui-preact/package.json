@@ -1,0 +1,26 @@
+{
+  "name": "@repo/ui-preact",
+  "version": "1.0.0",
+  "description": "Shared preact components",
+  "exports": {
+    "./button": "./src/button/index.tsx"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "tsc",
+    "build": "tsc"
+  },
+  "author": "",
+  "devDependencies": {
+    "@repo/eslint-config": "*",
+    "@repo/typescript-config": "*",
+    "@turbo/gen": "^1.10.12",
+    "@types/eslint": "^8.44.7",
+    "@types/node": "^20.5.2",
+    "preact": "^10.19.3",
+    "typescript": "^5.3.3"
+  },
+  "dependencies": {
+    "@repo/utils": "^0.0.0"
+  }
+}
