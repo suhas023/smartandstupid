@@ -8,7 +8,7 @@ const Home = () => {
         import("../../components/button").then(m => {setm(true); ref.current = m.default});
     }, []);
     const C = ref.current;
-    return <div className={style.home}>home <div> { M ? <C /> : null }  </div> </div>
+    return <div className={style.home}>homex <div> { M ? <C /> : null }  </div> </div>
 }
 
 export default Home;

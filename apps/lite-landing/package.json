@@ -4,11 +4,10 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "dev": "vite dev",
-    "build": "npm run build:client && npm run build:server",
+    "dev": "node server --port 7000",
+    "build": "vite build --outDir dist/static && npm run build:server && node prerender",
     "build:client": "vite build --outDir dist/client",
     "build:server": "vite build --ssr src/entry-server.tsx --outDir dist/server",
-    "generate": "vite build --outDir dist/static && npm run build:server && node prerender",
     "serve-dev": "cross-env NODE_ENV=production node server",
     "serve": "serve dist/static"
   },
@@ -21,6 +20,7 @@
   "devDependencies": {
     "@repo/eslint-config": "*",
     "@repo/typescript-config": "*",
+    "arg": "^5.0.2",
     "compression": "^1.7.4",
     "cross-env": "^7.0.3",
     "express": "^4.18.2",
