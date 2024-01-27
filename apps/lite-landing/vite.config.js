@@ -5,6 +5,7 @@ export default defineConfig({
   esbuild: {
     jsxFactory: 'h',
     jsxFragment: 'Fragment',
+    target: "ES2015"
   },
   server: {
     port: 7000,
